@@ -6,24 +6,20 @@ package com.lhn;
  */
 public class L014LongestCommonPrefix {
     public static void main(String[] args) {
-        new L014LongestCommonPrefix().longestCommonPrefix(new String[]{"flower", "flow", "flight"});
+        System.out.println(new L014LongestCommonPrefix().longestCommonPrefix(new String[]{"flower", "flow", "flight"}));
     }
 
     public String longestCommonPrefix(String[] strs) {
-        StringBuilder stringBuilder = new StringBuilder();
+        if (strs.length == 0) {
+            return "";
+        }
         for (int i = 0; i < strs[0].length(); i++) {
-            char temp = strs[0].charAt(i);
-            for (String str : strs) {
-                try {
-                    if (temp != str.charAt(i)) {
-                        break;
-                    }
-                } catch (Exception e) {
-                    return stringBuilder.toString();
+            for (int j = 0; j < strs.length; j++) {
+                if (i == strs[j].length() || strs[0].charAt(i) != strs[j].charAt(i)) {
+                    return strs[0].substring(0, i);
                 }
-                stringBuilder.append(temp);
             }
         }
-        return stringBuilder.toString();
+        return strs[0];
     }
 }
