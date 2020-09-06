@@ -16,8 +16,8 @@ public class L322CoinChange {
         Arrays.fill(dp, amount + 1);
 
         dp[0] = 0;
-        for (int i = 1; i <= amount; i++) {
-            for (int coin : coins) {
+        for (int coin : coins) {
+            for (int i = 1; i <= amount; i++) {
                 if (i >= coin) {
                     dp[i] = Math.min(dp[i], dp[i - coin] + 1);
                 }
