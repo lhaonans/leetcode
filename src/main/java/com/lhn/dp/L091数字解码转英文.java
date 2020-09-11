@@ -1,10 +1,10 @@
-package com.lhn;
+package com.lhn.dp;
 
 /**
  * @author lhn
  * @date 2020/9/10 22:53
  */
-public class L091解码方法 {
+public class L091数字解码转英文 {
     public int numDecodings(String s) {
 
         if (s.length() == 0) {
@@ -13,7 +13,6 @@ public class L091解码方法 {
         if (s.charAt(0) == '0') {
             return 0;
         }
-
 
         int[] dp = new int[s.length() + 1];
         dp[0] = 1;

@@ -1,4 +1,4 @@
-package com.lhn;
+package com.lhn.bfs;
 
 import java.util.*;
 

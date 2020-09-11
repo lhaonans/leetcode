@@ -1,4 +1,4 @@
-package com.lhn;
+package com.lhn.backtrack;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -8,7 +8,7 @@ import java.util.List;
  * @author lhn
  * @date 2020/8/23 20:03
  */
-public class L046全排列 {
+public class L046数字全排列 {
 
     public List<List<Integer>> permute(int[] nums) {
         LinkedList<Integer> track = new LinkedList<>();

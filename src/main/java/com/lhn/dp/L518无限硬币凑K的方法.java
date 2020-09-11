@@ -1,10 +1,11 @@
-package com.lhn;
+package com.lhn.dp;
 
 /**
  * @author lhn
  * @date 2020/8/25 14:39
  */
-public class L518零钱兑换II {
+public class L518无限硬币凑K的方法 {
+    //每种硬币无限个,凑K,有多少种方法
     public int change(int amount, int[] coins) {
         int[][] dp = new int[coins.length + 1][amount + 1];
 

@@ -1,4 +1,4 @@
-package com.lhn;
+package com.lhn.dfs;
 
 import com.lhn.global.TreeNode;
 
@@ -8,7 +8,7 @@ import java.util.*;
  * @author lhn
  * @date 2020/8/25 15:54
  */
-public class L337打家劫舍III {
+public class L337打家劫舍二叉树 {
 
     Map<TreeNode, Integer> f;
     Map<TreeNode, Integer> g;

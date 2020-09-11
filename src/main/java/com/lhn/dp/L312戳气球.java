@@ -1,11 +1,11 @@
-package com.lhn;
+package com.lhn.dp;
 
 /**
  * @author lhn
  * @date 2020/8/23 14:07
  */
 public class L312戳气球 {
-
+    // 戳破,可以得到left*I*right,最大价值
     public int maxCoins(int[] nums) {
         int n = nums.length;
         int[] points = new int[n + 2];

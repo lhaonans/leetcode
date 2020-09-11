@@ -1,4 +1,4 @@
-package com.lhn;
+package com.lhn.dfs;
 
 /**
  * @author lhn
@@ -6,7 +6,6 @@ package com.lhn;
  */
 public class L079单词搜索 {
     public boolean exist(char[][] board, String word) {
-        int res = 0;
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[0].length; j++) {
                 if (area(board, word, i, j, 0)) {
@@ -23,7 +22,8 @@ public class L079单词搜索 {
             return true;
         }
 
-        if (!isArea(board, r, c)) {
+        boolean isArea = r >= 0 && r < board.length && c >= 0 && c < board[0].length;
+        if (!isArea) {
             return false;
         }
 
@@ -39,9 +39,5 @@ public class L079单词搜索 {
         board[r][c] -= 256;
 
         return res;
-    }
-
-    public boolean isArea(char[][] board, int r, int c) {
-        return r >= 0 && r < board.length && c >= 0 && c < board[0].length;
     }
 }

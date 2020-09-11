@@ -1,10 +1,11 @@
-package com.lhn;
+package com.lhn.dp;
 
 /**
  * @author lhn
  * @date 2020/9/10 22:50
  */
-public class L064最小路径和 {
+public class L064权重左上角到右下角 {
+    //从数组左上角到右下角最小权重
     public int minPathSum(int[][] grid) {
         if (grid == null || grid.length == 0 || grid[0].length == 0) {
             return 0;

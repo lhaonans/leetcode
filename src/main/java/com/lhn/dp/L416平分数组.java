@@ -1,4 +1,4 @@
-package com.lhn;
+package com.lhn.dp;
 
 import java.util.Arrays;
 
@@ -6,8 +6,8 @@ import java.util.Arrays;
  * @author lhn
  * @date 2020/8/25 20:08
  */
-public class L416分割等和子集  {
-
+public class L416平分数组  {
+    // 数组是否可以平分为两个部分
     public boolean canPartition(int[] nums) {
         int sum = 0;
         for (int num : nums) {

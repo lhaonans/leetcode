@@ -1,4 +1,4 @@
-package com.lhn;
+package com.lhn.dp;
 
 import java.util.Arrays;
 
@@ -6,8 +6,8 @@ import java.util.Arrays;
  * @author lhn
  * @date 2020/8/23 19:36
  */
-public class L322零钱兑换 {
-
+public class L322无限硬币凑K {
+    //每种硬币无限个,凑K,最少要几个
     public int coinChange(int[] coins, int amount) {
         int[] dp = new int[amount + 1];
         Arrays.fill(dp, amount + 1);

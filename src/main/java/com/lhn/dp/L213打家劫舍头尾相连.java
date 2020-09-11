@@ -1,4 +1,4 @@
-package com.lhn;
+package com.lhn.dp;
 
 import java.util.Arrays;
 
@@ -6,7 +6,7 @@ import java.util.Arrays;
  * @author lhn
  * @date 2020/8/25 15:41
  */
-public class L213打家劫舍II {
+public class L213打家劫舍头尾相连 {
 
     public int rob(int[] nums) {
         if (nums.length == 0) {

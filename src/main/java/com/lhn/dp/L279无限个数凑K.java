@@ -1,4 +1,4 @@
-package com.lhn;
+package com.lhn.dp;
 
 import java.util.Arrays;
 
@@ -6,16 +6,14 @@ import java.util.Arrays;
  * @author lhn
  * @date 2020/9/3 16:12
  */
-public class L279完全平方数 {
-
+public class L279无限个数凑K {
+    // 每个数字无限个,凑K,最少需要几个数
     public int numSquares(int n) {
         int squareIndex = (int) Math.sqrt(n) + 1;
         int[] squareNums = new int[squareIndex];
         for (int i = 1; i < squareIndex; i++) {
             squareNums[i] = i * i;
         }
-        System.out.println(Arrays.toString(squareNums));
-        System.out.println(n);
 
         int[] dp = new int[n + 1];
         Arrays.fill(dp, n + 1);

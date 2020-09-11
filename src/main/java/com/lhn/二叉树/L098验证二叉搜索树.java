@@ -1,4 +1,4 @@
-package com.lhn;
+package com.lhn.二叉树;
 
 import com.lhn.global.TreeNode;
 
@@ -7,9 +7,6 @@ import com.lhn.global.TreeNode;
  * @date 2020/8/28 20:02
  */
 public class L098验证二叉搜索树  {
-    public static void main(String[] args) {
-
-    }
     long pre = Long.MIN_VALUE;
 
     public boolean isValidBST(TreeNode root) {

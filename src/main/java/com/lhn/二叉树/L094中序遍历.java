@@ -1,4 +1,4 @@
-package com.lhn;
+package com.lhn.二叉树;
 
 import com.lhn.global.TreeNode;
 
@@ -10,7 +10,7 @@ import java.util.Stack;
  * @author lhn
  * @date 2020/9/10 22:54
  */
-public class L94二叉树的中序遍历 {
+public class L094中序遍历 {
     public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();

@@ -1,4 +1,4 @@
-package com.lhn;
+package com.lhn.dfs;
 
 /**
  * @author lhn
@@ -16,7 +16,8 @@ public class L463岛屿的周长 {
     }
 
     public int area(int[][] grid, int r, int c) {
-        if (!isArea(grid, r, c)) {
+        boolean isArea = r >= 0 && r < grid.length && c >= 0 && c < grid[0].length;
+        if (!isArea) {
             return 1;
         }
         if (grid[r][c] == 0) {
@@ -27,11 +28,7 @@ public class L463岛屿的周长 {
         }
         grid[r][c] = 2;
 
-        return  area(grid, r - 1, c) + area(grid, r + 1, c) + area(grid, r, c - 1) + area(grid, r, c + 1);
+        return area(grid, r - 1, c) + area(grid, r + 1, c) + area(grid, r, c - 1) + area(grid, r, c + 1);
 
-    }
-
-    public boolean isArea(int[][] grid, int r, int c) {
-        return r >= 0 && r < grid.length && c >= 0 && c < grid[0].length;
     }
 }

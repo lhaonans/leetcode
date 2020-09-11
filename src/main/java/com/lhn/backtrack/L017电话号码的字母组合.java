@@ -1,4 +1,4 @@
-package com.lhn;
+package com.lhn.backtrack;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,7 +20,7 @@ public class L017电话号码的字母组合 {
         put("8", "tuv");
         put("9", "wxyz");
     }};
-    private List<String> output = new ArrayList<String>();
+    private List<String> output = new ArrayList<>();
 
     public void backtrack(String combination, String next_digits) {
         if (next_digits.length() == 0) {

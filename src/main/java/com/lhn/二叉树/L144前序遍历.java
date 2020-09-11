@@ -1,4 +1,4 @@
-package com.lhn;
+package com.lhn.二叉树;
 
 import com.lhn.global.TreeNode;
 
@@ -9,7 +9,7 @@ import java.util.List;
  * @author lhn
  * @date 2020/9/10 23:00
  */
-public class L144二叉树的前序遍历 {
+public class L144前序遍历 {
     public List<Integer> preorderTraversal(TreeNode root) {
         ArrayList<Integer> integers = new ArrayList<>();
         preorderTraversal(root, integers);

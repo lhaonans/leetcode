@@ -1,4 +1,4 @@
-package com.lhn;
+package com.lhn.backtrack;
 
 import java.util.ArrayList;
 import java.util.List;
